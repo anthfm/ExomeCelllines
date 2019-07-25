@@ -40,6 +40,7 @@ census <- read.csv(file="cancer_gene_census.csv", stringsAsFactors=FALSE)
 	    df2$CODING <- NA
 	    
 	    # CHECK FOR CODING GENE's
+		  
 	    #df2 <- df2 %>%
 	    #mutate(CODING = map_chr(
 	    #.x = POS,
@@ -83,8 +84,6 @@ census <- read.csv(file="cancer_gene_census.csv", stringsAsFactors=FALSE)
 	    a <- a - 1 
 	    variants <- append(variants, list(df3), a)
 	    names(variants)[(a+1)] <- tt
-	    
-	    
 	    
 	  } #end of analysis
 	  
