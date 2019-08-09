@@ -7,4 +7,4 @@ Post processing of variants (vcf's) into dataframe. Script does the following:
 3. Checks for allelic frequency (common variants)
 
 
-raw-processing = MuTect1/2 pipeline for processing raw GDSC1000 exome data
+*raw-processing* directory = MuTect1/2 pipeline for processing raw GDSC1000 exome data
