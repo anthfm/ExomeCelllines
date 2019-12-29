@@ -3,6 +3,7 @@ import os
 import allel as allel
 import tabix as tabix
 import collections
+import pickle
 
 # import cancer gene census
 census = pd.read_csv("/Users/imanthonny/Desktop/mutation/cancer_gene_census.csv",delimiter=",")
@@ -66,3 +67,5 @@ vcf_coding_only = vcf_coding_only[vcf_coding_only["coordinate"].isin(MAF["Locati
 final_variants = vcf_coding_only
 final_variants["Common"] = "YES"
 
+with open('/Users/imanthonny/Desktop/mutation/final_variants.obj', 'wb') as f:
+    pickle.dump(final_variants, f)
