@@ -1,6 +1,6 @@
 # Cell line Exome
 
-Preprocessing of cell line Exome data + Postprocessing of variants (vcf's) into dataframe. Postprocessing script does the following:
+Preprocessing of cell line Exome data + Postprocessing of variants (vcf's) into dataframe. Postprocessing script does the following (process_vcf.R or process_vcf.py):
 
 1. Matches variants to Cancer Gene Census
 2. Checks for coding genes
